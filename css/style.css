@@ -85,7 +85,7 @@ header .icons #menu-bars{
 
 #search-form{
     position: fixed;
-    top: 0; left: 0;
+    top: -110%; left: 0;
     height: 100%; width: 100%;
     z-index: 1004;
     background: rgba(0,0,0,.8);
@@ -93,6 +93,9 @@ header .icons #menu-bars{
     align-items: center;
     justify-content: center;
     padding: 0 1rem;
+}
+#search-form.active{
+    top: 0;
 }
 #search-form #search-box{
     width: 50rem;
@@ -117,6 +120,14 @@ header .icons #menu-bars{
 #search-form label:hover{
     color: var(--green);
 }
+#search-form #close{
+    position: absolute;
+    color: #FFF;
+    cursor: pointer;
+    top: 2rem;right: 3rem;
+    font-size: 5rem;
+}
+
 
 
 
@@ -175,6 +186,10 @@ html{
     font-size: 2rem;
     background: #eee;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    #search-form #search-box{
+    width: 90%;
+    margin: 0.1rem;
     }
 }
 @media (max-widht:991px){
