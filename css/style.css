@@ -176,8 +176,9 @@ header .icons #menu-bars{
     padding:.5rem 0;
     line-height: 1.5;
 }
-
-
+.swiper-pagination-bullet-active{
+    background: var(--green);
+}
 
 
 
@@ -209,6 +210,9 @@ html{
     header{
         padding: 1rem 2rem;
     }
+    section{
+        padding:2rem;
+    }
 }
 
     @media (max-widht:768px){
@@ -238,6 +242,9 @@ html{
     #search-form #search-box{
     width: 90%;
     margin: 0.1rem;
+    }
+    .home .home-slider .slide .content h3{
+        font-size:5rem;
     }
 }
 @media (max-widht:991px){
