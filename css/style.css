@@ -80,7 +80,6 @@ header .navbar a{
     color:var(--light-color)
 
 }
-header .navbar a.active,
 header .navbar a:hover{
     color: #FFF;
     background: var(--green) ;
@@ -408,78 +407,77 @@ header .icons #menu-bars{
     line-height: 1.8;
     color: var(--light-color);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*media queries*/
-
-@media (max-widht:991px){
-
-html{
-    font-size: 55%;
-    
-    }
-    header{
-        padding: 1rem 2rem;
-    }
-    section{
-        padding:2rem;
-    }
-}
-
-    @media (max-widht:768px){
-    header .icons #menu-bars{
-        display: inline-block;
-}
-    header .navbar{
-    position: absolute;
-    top: 100%; left:0; right:0;
+.pedidos form{
+    width: 90rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: .1rem solid rgba(0,0,0,.2);
     background: #FFF;
-    border-top: .1rem solid rgba(0,0,0,.2);
-    border-bottom: .1rem solid rgba(0,0,0,.2);
-    padding: 1rem;
-    }
-    header .navbar.active{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    header .navbar a{
-    display: block;  
-    padding: 1.5rem; 
-    margin: 1rem;
-    font-size: 2rem;
-    background: #eee;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-    #search-form #search-box{
-    width: 90%;
-    margin: 0.1rem;
-    }
-    .home .home-slider .slide .content h3{
-        font-size:5rem;
-    }
+    padding: 1.5rem;
+    margin: 0 auto;
 }
-@media (max-widht:991px){
-
-    html{
-        font-size: 55%;
-        
-        }
-   
-    }
-    
-
+.pedidos form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.pedidos form .inputBox .input{
+    width: 49%;
+}
+.pedidos form .inputBox .input span{
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+.pedidos form .inputBox .input input,
+.pedidos form .inputBox .input textarea{
+    background: #eee;
+    border-radius: 5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.pedidos form .inputBox .input textarea{
+    height: 20rem;
+    resize: none;
+}
+.pedidos form .btn{
+    margin: 0;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+.footer .box-container .box h3{
+    padding: .5rem 0;
+    font-size: 2.5rem;
+    color: var(--black);
+}
+.footer .box-container .box a{
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+.footer .box-container .box a:hover{
+    color:var(--green);
+    text-decoration: none;
+}
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: .5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+.footer .credit span{
+    color: var(--green);
+}
 
